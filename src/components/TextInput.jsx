@@ -6,7 +6,7 @@ import { useState } from "react"
 const TextInput = ({extractKeywords}) => {
     const [text,setText]=useState("");
     const toast=useToast()
-    const submitText=()=>{
+    const submitText=async ()=>{
         if(!text){
             toast({
                 title: 'Text area must have some text',
