@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Button, Textarea, useToast } from "@chakra-ui/react";
 import { useState } from "react"
 
 
-const TextInput = (extractKeywords) => {
+const TextInput = ({extractKeywords}) => {
     const [text,setText]=useState("");
     const toast=useToast()
     const submitText=()=>{
